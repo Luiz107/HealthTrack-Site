@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Track - Luiz Gabriel Bruscagim</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Health Track - Login</title>
+    <link rel="stylesheet" type="text/css" href="style-login.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header class="header-top">
-        <h1 class="header-title"><a href="file:///C:/css/index.html">Health Track</a></h1>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="file:///C:/css/index-login.html">Login</a></li>
-                <li><a href="file:///C:/css/index-cadastro.html">Cadastro</a></li>
-                <li><a href="file:///C:/css/index-funcionalidades.html">Explore</a></li>                 
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h2 class="hero-title">Venha conhecer o futuro dos seus cuidados com a saúde!</h2>
-        <a href="file:///C:/css/index-login.html" class="hero-link">Entrar</a>
-    </section>
-
-    <section class="tour" id="tours">
-        <h2 class="tour-title">Faça um tour pela nossa plataforma</h2>
-        <div class="line"></div>
-        <div class="tour-list">
-            <div class="tour-list-item">
-                <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione nobis beatae laboriosam architecto aliquid atque.</p>
-            </div>
-            <div class="tour-list-item">
-                <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione nobis beatae laboriosam architecto aliquid atque.</p>      
-            </div>
+    <img class="wave" src="C:/css/wave (1).png">
+    <div class="container">
+        <div class="img">
+            <img src="file:///C:/Users/luizg/OneDrive/%C3%81rea%20de%20Trabalho/bg.svg">
         </div>
-    </section>
-
-    <section class="explore" id="explore">
-        <h2 class="explore-title">Explore o futuro</h2>
-        <div class="line"></div>
-        <p class="explore-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, doloribus ab sequi minima beatae excepturi, dolor repellat id porro, eaque perferendis aperiam ad autem omnis.
-        </p>
-        <a href="" class="btn">Veja mais</a>
-    </section>
-
-    <script src="./js/scroll.js"></script>
+        <div class="login-content">
+            <form action="index.html">
+                <img src="file:///C:/Users/luizg/OneDrive/%C3%81rea%20de%20Trabalho/avatar.svg">
+                <h2 class="title">Olá usuário!</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email ou número de telefone</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                        <i class="lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Senha</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+                <a href="#">Esqueceu sua senha?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
