@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.header-title a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li {
+    margin: 0 10px;
+}
+
+.header-nav a {
+    font-size: .9rem;
+    font-weight: 800;
+    transition: .5s;
+}
+
+.header-nav a:hover {
+    color: #38d39f;;
+}
+
+.active-scroll {
+    background-color: rgba(19, 18, 18, 0.87);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .3);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(107, 194, 26, 0.5), rgba(204, 235, 69, 0));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+
+.hero-title {
+    font-size: 8vmin;
+    margin-bottom: 2rem;
+}
+.hero-subtitle{
+    font-size: 5vmin;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 5vmin;
+    margin-bottom: 2rem;
+}
+
+.hero-botton {
+    border: 1px solid #38d39f;;
+    padding: 12px 30px;
+    border-radius: 70px;
+    background-color: #38d39f;
+    font-size: 3vmin;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hero-botton:hover {
+    background: transparent;
+}
+
+.functions {
+    width: 80%;
+    min-height: 100vh;
+    margin: 20px auto;
+    padding: 80px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.functions-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+.line {
+    width: 300px;
+    height: 10px;
+    background-color:#38d39f;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.functions-list {
+    width: 100%;
+    margin: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.function-list-item {
+    width: 40%;
+}
+
+.function-list-item h3 {
+    font-size: 4vmin;
+    margin: 20px 0 0;
+}
+
+.function-list-item p {
+    font-size: 3vmin;
+    margin: 10px 0 40px;
+}
+
+.btn {
+    border: 1px solid #40a181;;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-color: #38d39f;;
+    font-size: 2.5vmin;
+    transition: .5s;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #38d39f;
+}
+
+.plans {
+    width: 100%;
+    height: 100vh;
+    margin: 30px 0;
+    padding: 50px;
+    background-image: linear-gradient(rgba(107, 194, 26, 0.5), rgba(203, 226, 100, 0)),url(C:\css\healthcare1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: black;
+}
+
+
+.plans-title {
+    margin-bottom: 20px;
+    font-size: 6vmin;
+}
+
+.line {
+    width: 40%;
+}
+
+.plans .btn:hover {
+    color: #38d39f;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+@media(max-width: 720px) {
+
+    
+    .header-title a {
+        font-size: 1.8rem;
+    }
+
+    .header-top {
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .function-list {
+        flex-direction: column;
+    }
+
+    .function-list-item {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+}
